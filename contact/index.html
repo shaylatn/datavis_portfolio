@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="../style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <h1>Contact</h1>
+  </head>
+  <body>
     <nav>
       <a href="../index.html">Home</a>
       <a href="../projects/index.html">Projects</a>
-      <a>Contact</a>
+      <a class="current">Contact</a>
       <a href="../resume/index.html">Resume</a>
       <a href="https://github.com/shaylatn/datavis_portfolio" target="_blank"
         >Github</a
       >
     </nav>
-    <form action="mailto:shaylatn@mit.edu" method="POST" enctype="text/plain">
-      <label>Email <input name="email" type="email" /> </label>
-      <label>Subject <input name="subject" /></label>
-      <label>Message <textarea name="body"></textarea></label>
-      <button>Submit</button>
+    <h1>Contact</h1>
+    <form
+      action="mailto:shaylatn@mit.edu"
+      method="POST"
+      enctype="text/plain"
+      style="display: grid; grid-template-columns: auto 1fr; gap: 1em"
+    >
+      <label
+        style="
+          display: grid;
+          grid-template-columns: subgrid;
+          grid-column: 1 / -1;
+        "
+        >Email
+        <input name="email" type="email" />
+      </label>
+      <label
+        style="
+          display: grid;
+          grid-template-columns: subgrid;
+          grid-column: 1 / -1;
+        "
+        >Subject <input name="subject"
+      /></label>
+      <label
+        style="
+          display: grid;
+          grid-template-columns: subgrid;
+          grid-column: 1 / -1;
+        "
+        >Message
+        <textarea name="body"></textarea>
+      </label>
+      <button style="grid-column: 1 / -1">Submit</button>
     </form>
-  </head>
-  <body></body>
+  </body>
 </html>
