@@ -57,3 +57,7 @@ img {
     }
   }
 }
+time {
+  display: flex;
+  justify-content: flex-end;
+}
