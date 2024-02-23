@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vis & Society Assignment 2</title>
+    <link
+      rel="stylesheet"
+      href="https://vis-society.github.io/assignments/report.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 2</small>
+        Exploratory Data Analysis
+      </h1>
+
+      <p><strong>Shayla Nguyen</strong> — <em>shaylatn@mit.edu</em></p>
+    </header>
+    <main>
+      <section>
+        <h2>Subtheme: Exclusionary Zoning</h2>
+
+        <h3>Overall Analysis Questions</h3>
+        <ol>
+          <li>
+            What are the income differences between largely single family zoned
+            areas and other housing areas? In some of the readings from A1, it
+            stated that single family housing is typically advertised for older,
+            middle to upper class families, so I wanted to see what this income
+            gap looked like.
+          </li>
+          <li>
+            Which racial demographics are most prevalent in Massachusetts?
+            Historically, I know there have been zoning laws made to exclude
+            certain demographics from living in an area, so I wanted to see if
+            there were any trends.
+          </li>
+          <li>
+            What is the age distribution of each type of housing area? From the
+            reading it seemed like inner cities like NY had more dense housing.
+            I feel like younger individuals often live in inner cities while
+            older adults with families tend to move to the suburbs where there
+            are more single family homes.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Discoveries & Insights</h2>
+        <p>
+          I first wanted to assess the quality of the data. Taking a skim
+          through the datasheet, I thought the data looked pretty reasonable. My
+          only concern is that the total household data differs that that from
+          the population data. This is stated in the metadata; however, it's
+          good to keep in mind moving forward as different metrics may not be
+          entirely proportional to each other. Also, for the purposes of showing
+          trends, I will not be able to display all of the data as there are so
+          many cities and I cannot capture all of the information in one image.
+        </p>
+
+        <figure>
+          <img src="../images/q1_1.png" alt="" width="500px" />
+          <img src="../images/q1_2.png" alt="" width="500px" />
+          <figcaption>
+            These visualizations help to answer my first question of, what are
+            the income differences between largely single family zoned areas and
+            other housing areas? This graph shows the proportion of each city
+            whose household income is, from bottom to top, under 25K, 25-50K,
+            50-75K, 75-100K, 100-200K, and 200K+. Each city is also split
+            between areas of single family housing, denoted by a 1, and non
+            single family housing denoted by a 0. You can see the trend that in
+            cities that have both only single family and non single family
+            housing areas, the only single family areas tend to have an equal or
+            higher percentage of high income earners. Comparing areas within a
+            city as opposed to cities aginst each other helps to reduce
+            confoudning variables of jurisdiction lines and income
+            discrimination across cities. Thus, we can conclude from this that
+            families living in only single family housing areas tend to be more
+            waelthy than those who don't.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/q2_1.png" alt="" width="500px" />
+          <img src="../images/q2_2.png" alt="" width="500px" />
+          <figcaption>
+            I wanted to learn about Massachusetts' racial demographics. In this
+            multi bar chart, you can see the racial distribution for each city
+            in Massachusetts. The categories are White, African American (aa),
+            Asian (as), Latino (lat), and other. I grouped Native Americans,
+            Pacific Islanders, multiracial, and other all into one category of
+            other because their individual proportions were very insignificant
+            comapred to other values. We can see that for most municipalities,
+            white is the dominating demograhic; however, there are some
+            municipalities such as Chelsea, Randolph, and even Quincy, that have
+            a much higher minority population than others. This led me to ask
+            myself if there were any other trends based on race.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/q2_b.png" alt="" width="500px" />
+          <figcaption>
+            I then looked into the relationship between % population that is
+            white and only single family housing. We can see in the plot that in
+            majoroty of the municipalities that have only single family areas,
+            these areas have a large proportion of white residents, with most of
+            these areas being over 75% white. On the other side, the areas that
+            are non single family housing tendd to have a wider range and
+            vareity of percentages. We can use this to conclude that there does
+            exist some relation between racial demographic and housing type.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/q3.png" alt="" width="500px" />
+          <figcaption>
+            Lastly, to explore my last question, I graphed the age distribution
+            of each city. This is another point in which I found a quality issue
+            in the data. The data groups all 18-65 year olds together in one
+            bin, which is extremely uninformative to learn about age trends in
+            different housing.Being under 18 is not helpful as these residents
+            are most likely dependents of their families. By combining every
+            ages 18-65, we lose information about different generations of
+            people and young adults without families versus older adults with
+            children. Ultimately, we can see that every city is dominated by
+            those 18-65, but with such a large range, this isn't a surprise, but
+            there is nothing in the data to look deeper into this area.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Summary</h2>
+
+        <p>
+          In this exploratory data analysis, we explore trends about single
+          family housing across Massachusetts. We are able to see census data
+          from Massachusetts municipalities and specifically draw conclusions
+          from income and racial demographic information. Though very
+          informative in some aspects, the data lacks specifc information on age
+          which I believe could be extremely beneficial to study as people in
+          different age groups have very different mindsets and tend to fall in
+          unique income and lifestyle buckets.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
