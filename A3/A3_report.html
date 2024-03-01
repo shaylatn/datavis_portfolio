@@ -1,0 +1,187 @@
+<script src="../global.js" type="module"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vis & Society Assignment 3</title>
+    <link
+      rel="stylesheet"
+      href="https://vis-society.github.io/assignments/report.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 3</small>
+        Visualization Design
+      </h1>
+
+      <p><strong>Shayla Nguyen</strong> — <em>shaylatn@mit.edu</em></p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Phase One: Sketching Visualizations</h2>
+
+        <figure>
+          <img src="../images/pie.png" alt="" width="500" />
+          <figcaption>
+            This is a nested pie chart depicting the age distributions of the US
+            population in 1900 and 2000. The inner pie chart is of 1900 and the
+            outer is of 2000. The population is divided into 10 year age
+            increments.
+          </figcaption>
+        </figure>
+
+        <p>Design Rationale for Sketch 1:</p>
+
+        <ul>
+          <li>
+            I wanted to see a side by side comparison of the age proportions
+          </li>
+          <li>
+            It is easy to compare slice sizes and subsets of age groups between
+            the years
+          </li>
+          <li>Important points such as 25% or 50% are easily identifiable</li>
+          <li>
+            Outer slices may "appear" larger than inner slices due to having a
+            larger radius which could mislead population size
+          </li>
+          <li>
+            This allows us to see proportions really well but I would love to
+            also see the counts.
+          </li>
+        </ul>
+
+        <figure>
+          <img src="../images/bar.png" alt="" width="500" />
+          <figcaption>
+            This is a stacked bar chart showing the population count for each
+            age in each year, 1900 and 2000. The population is divided into 10
+            year age increments.
+          </figcaption>
+        </figure>
+
+        <p>Design Rationale for Sketch 2:</p>
+
+        <ul>
+          <li>
+            This better depicts overall change in population as well as age
+            group changes from 1900 to 2000
+          </li>
+          <li>
+            It maintains some of the proportionality benefits. You can see what
+            proportion of the population a certain age group takes up.
+          </li>
+          <li>
+            It is more difficult to compare proportions across the years since
+            the heights of the bars are different.
+          </li>
+          <li>
+            It provides a visualization of cumulative counts but its difficult
+            to determine the individual counts of each age group.
+          </li>
+        </ul>
+
+        <figure>
+          <img src="../images/scatterplot.png" alt="" width="500" />
+          <figcaption>
+            This is a scatter plot showing the population count of each age
+            group, split into 10 year age increments. Red indicates 1900 and
+            blue indicates 2000.
+          </figcaption>
+        </figure>
+
+        <p>Design Rationale for Sketch 3:</p>
+
+        <ul>
+          <li>It shows the count of each age group for each year.</li>
+          <li>You can see which groups had the biggest change.</li>
+          <li>
+            I wish I added some line between the points for each year so we
+            could visually compare the sizes of the lines across age groups.
+          </li>
+          <li>
+            The graph is very simple and doesn't show much more than the
+            datasheet tells us.
+          </li>
+        </ul>
+
+        <h3>Reflection</h3>
+
+        <p>
+          Overall, each sketch has its pros and cons. I made each successive
+          sketch after finding something wrong with the current iteration.
+          However, with adding a new feature means I would sacrifice a benefit
+          of the previous sketch. I believe they're all good for different use
+          cases. If you didn't care about the actual size of the population and
+          more just the age distribution then I would use the double pie chart
+          as the stacked nature of it allows for very easy comparisons and
+          estimations. However, if the differences in population is important to
+          you then I would use the stacked bar chart as opposed to the scatter
+          plot. This is because the information in the scatterplot can be found
+          in the stack bars with a little bit of math (subtracting the bottom
+          boundary from the top). It visualizes population differences while
+          also giving you an idea of what the age distribution of a given year
+          looks like.
+        </p>
+      </section>
+
+      <section>
+        <h2>Phase Two: Final Design</h2>
+
+        <figure>
+          <img src="../images/final_pie.png" alt="" width="500" />
+          <figcaption>
+            This is a stacked double pie chart that shows the age distribution
+            of the population in 1900 and 2000. The age groups are divided into
+            10 year increments.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Design Process & Design Decisions</h2>
+
+        <p>
+          For my design process, I wanted to emphasize proportions over the
+          actual population count. We know that population has increased
+          overtime but this can happen in many ways. The population can increase
+          proportionally, with the same fraction of people landing in each
+          bucket or we could see a trend that over the 100 years people tend to
+          live shorter or longer and in this case, we can see that they got
+          older.
+        </p>
+        <p>
+          I decided to use a pie chart as opposed to the stacked bar chart
+          because going around the circle, we know exactly how much is one
+          whole, as opposed to the bar chart where it can be various heights
+          which makes comparing proportion slices more difficult. With the pie
+          chart, if the slice lines line up then you know those are equal
+          proportionally. Additionally, I ordered the slices in increasing age
+          order starting at the positive y axis and going around. This is so we
+          can subset adjacent age groups so we can see if the population is
+          generally young or old without having to add up disconnected slices.
+          Since both pie charts go in the same order, we can comapre age groups
+          between the two years.
+        </p>
+
+        <h3>Reflection</h3>
+
+        <p>
+          Phase 1 helped me to creatively think of ways to visualize a simple
+          dataset. Since the dataset wasn't complex, I was able to focus more on
+          the visualizations to represent it instead of trying to pick out which
+          parts of the data I want. I also liked how my different iterations of
+          phase 1 nuilt upon eachother, continuing to answer new questions the
+          arose, thus giving me different options if my focus question were to
+          vary. I believe my first sketch best represents my question of "how
+          did the age distribution differ from 1900 to 2000" pretty well and
+          allows a reader to focus on the proportions which is why I chose to
+          create it.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

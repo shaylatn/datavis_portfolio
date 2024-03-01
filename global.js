@@ -28,6 +28,7 @@ let pages = [
   { url: "resume/", title: "Resume" },
   { url: "contact/", title: "Contact" },
   { url: "A2/report.html", title: "A2" },
+  { url: "A3/A3_report.html", title: "A3" },
   { url: "https://github.com/shaylatn/datavis_portfolio", title: "Github" },
   // add the rest of your pages here
 ];
