@@ -29,6 +29,7 @@ let pages = [
   { url: "contact/", title: "Contact" },
   { url: "A2/report.html", title: "A2" },
   { url: "A3/A3_report.html", title: "A3" },
+  { url: "A4/A4_report.html", title: "A4" },
   { url: "https://github.com/shaylatn/datavis_portfolio", title: "Github" },
   // add the rest of your pages here
 ];
